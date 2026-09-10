@@ -39,7 +39,7 @@ export default function Hero() {
           </p>
 
           <div
-            className="entrance-up mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
+            className="entrance-up mt-8 hidden flex-col gap-3 sm:flex sm:flex-row sm:flex-wrap"
             style={{ animationDelay: '440ms' }}
           >
             <CallButton href={BUSINESS.phoneHref} size="lg" />
