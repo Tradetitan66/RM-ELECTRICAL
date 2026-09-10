@@ -12,8 +12,9 @@ A complete, responsive single-page marketing site for RM Electrical
 - Six service cards (lighting, sockets & fittings, fuse board replacement,
   testing & inspection, external power, other) using line icons, each opening the
   WhatsApp enquiry popup with its service preselected.
-- About section, illustrative lighting feature (clearly captioned as stock,
-  not company work), how-enquiries-work steps, service-area/contact block,
+- About section and a lighting projects **carousel** (auto-rotating, arrow + dot
+  controls, reduced-motion aware), all real RM Electrical project photos
+  (client-provided), how-enquiries-work steps, service-area/contact block,
   accessible FAQ accordion, dark final CTA and full footer with Nextdoor +
   MyJobQuote profile links.
 - Shared WhatsApp enquiry modal (accessible: focus trap, Escape, focus restore,
@@ -69,7 +70,10 @@ server appears again, free the port before running `npm run dev`.
 
 4. **Nothing unverified is published:** no ratings (the "5/5 from 17 reviews"
    is unverified and excluded), no founding date, no certifications, no prices,
-   no fake portfolio, no EM Electrical Solutions content.
+   no fake portfolio, no EM Electrical Solutions content. The project photos in
+   "ABOUT RM ELECTRICAL" and the "LIGHTING PROJECTS" carousel are real RM Electrical
+   jobs supplied by the client; the social preview image stays clearly illustrative
+   (see `docs/IMAGES.md`).
 
 ## Verified at handover
 

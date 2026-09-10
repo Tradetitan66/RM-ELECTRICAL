@@ -45,12 +45,12 @@ export default function ServiceArea() {
           </div>
         </div>
 
-        <div className="border border-line bg-warm p-8 sm:p-10">
-          <div className="mb-6 overflow-hidden border border-line">
+        <div className="rounded-2xl border border-line bg-warm p-6 sm:p-8">
+          <div className="mb-5 overflow-hidden rounded-xl border border-line">
           <iframe
             title="Google Map showing Alexandria and Balloch in West Dunbartonshire, Scotland"
             src="https://maps.google.com/maps?q=Alexandria,+West+Dunbartonshire,+Scotland,+GB&z=13&output=embed"
-            className="block h-56 w-full border-0 sm:h-72"
+            className="block h-44 w-full border-0 sm:h-56"
             loading="lazy"
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
@@ -60,7 +60,7 @@ export default function ServiceArea() {
             {DETAILS.map((item) => (
               <div
                 key={item.label}
-                className="flex flex-col gap-1 py-4 first:pt-0 last:pb-0 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
+                className="flex flex-col gap-1 py-3 first:pt-0 last:pb-0 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
               >
                 <dt className="shrink-0 text-xs font-semibold uppercase tracking-[0.15em] text-body/60">
                   {item.label}

@@ -16,8 +16,8 @@ no fake portfolio). Unknown facts are simply left out — nothing is invented.
 | Header | Sticky dark header with wordmark, nav and desktop CTAs |
 | Hero | Dark text-only hero with call + WhatsApp CTA |
 | Services | Six line-icon service cards that preselect the WhatsApp form |
-| About | Image-and-text section |
-| Lighting feature | Illustrative lighting imagery (labelled as stock, not company work) |
+| About | Real RM Electrical project photo (client-provided) |
+| Lighting feature | Auto-rotating carousel of client-provided RM Electrical project photos |
 | How enquiries work | Three-step explanation |
 | Service area | Local Google Map embed + contact details |
 | FAQs | Accessible accordion |
@@ -82,5 +82,7 @@ Everything customer-facing is driven from a single configuration file:
   scroll, respects reduced motion and works with the mobile keyboard open.
 - Message text is built with `encodeURIComponent`; the ampersand, line breaks and
   punctuation are encoded correctly and verified by automated tests (`docs/TESTING.md`).
-- Imagery is licensed stock (Unsplash) that is clearly **illustrative**, never labelled
-  as RM Electrical's own work. See [docs/IMAGES.md](docs/IMAGES.md).
+- Imagery: the social preview photo is licensed stock (Unsplash) that is clearly
+  **illustrative**, never labelled as RM Electrical's own work. The About and lighting
+  feature photos are real RM Electrical projects supplied by the client. See
+  [docs/IMAGES.md](docs/IMAGES.md).

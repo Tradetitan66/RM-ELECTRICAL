@@ -64,16 +64,16 @@ function ServiceCard({ card }: { card: Card }) {
   const Icon = card.icon
 
   return (
-    <article className="group flex flex-col border border-line bg-white p-7 transition-shadow duration-300 hover:shadow-[0_16px_40px_-20px_rgba(17,17,17,0.3)]">
-      <span className="mb-5 inline-flex h-12 w-12 items-center justify-center border border-line text-ink transition-colors group-hover:border-orange group-hover:text-orange">
-        <Icon className="h-6 w-6" strokeWidth={1.75} aria-hidden="true" />
-      </span>
-      <h3 className="text-2xl font-bold">{card.title}</h3>
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-body">{card.copy}</p>
+    <article className="group flex flex-col rounded-2xl border border-line bg-white p-5 transition-shadow duration-300 hover:shadow-[0_16px_40px_-20px_rgba(17,17,17,0.3)] sm:p-6">
+      <div className="flex items-center gap-2.5">
+        <Icon className="h-5 w-5 shrink-0 text-orange transition-colors group-hover:[stroke-width:2]" strokeWidth={1.75} aria-hidden="true" />
+        <h3 className="text-xl font-bold">{card.title}</h3>
+      </div>
+      <p className="mt-1.5 flex-1 text-sm leading-relaxed text-body">{card.copy}</p>
       <button
         type="button"
         onClick={() => openModal(card.key)}
-        className="mt-6 inline-flex items-center gap-2 self-start pb-1 text-sm font-semibold text-ink underline decoration-line underline-offset-4 transition-colors hover:text-orange hover:decoration-orange"
+        className="mt-4 inline-flex items-center gap-2 self-start pb-1 text-sm font-semibold text-ink underline decoration-line underline-offset-4 transition-colors hover:text-orange hover:decoration-orange"
       >
         <WhatsAppGlyph className="h-4 w-4 text-[#25D366]" />
         Enquire on WhatsApp
@@ -99,7 +99,7 @@ export default function Services() {
           your home <span className="text-orange">needs.</span>
         </h2>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {CARDS.map((card, index) => (
             <Reveal key={card.key} delay={(index % 3) * 80}>
               <ServiceCard card={card} />

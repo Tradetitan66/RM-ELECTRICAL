@@ -18,7 +18,7 @@ export default function Header() {
   const closeMenu = () => setMenuOpen(false)
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-ink text-white">
+    <header className="entrance-down sticky top-0 z-40 border-b border-white/10 bg-ink text-white">
       <div className="container-site flex h-16 items-center justify-between gap-4">
         <Wordmark />
 

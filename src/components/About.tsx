@@ -7,14 +7,14 @@ export default function About() {
       <div className="container-site grid items-center gap-12 lg:grid-cols-2">
         <div className="relative order-2 lg:order-1">
           <img
-            src="/img/about-lighting.webp"
-            alt="A modern home warmly lit at dusk from inside the windows"
-            className="aspect-[4/3] w-full object-cover"
-            width={1100}
-            height={825}
+            src="/img/about-rm.webp"
+            alt="Electrical work completed by RM Electrical"
+            className="h-auto w-full rounded-2xl"
+            width={1200}
+            height={900}
             loading="lazy"
           />
-          <div className="absolute -bottom-6 -right-6 hidden border border-line bg-warm px-6 py-5 sm:block">
+          <div className="absolute -bottom-6 -right-6 hidden border border-line bg-warm px-6 py-5 sm:block rounded-2xl">
             <p className="text-xs font-semibold tracking-[0.2em] text-body/70">BASED IN</p>
             <p className="mt-1 text-lg font-bold text-ink">Alexandria, Scotland</p>
           </div>
