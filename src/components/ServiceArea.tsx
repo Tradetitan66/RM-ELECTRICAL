@@ -49,7 +49,7 @@ export default function ServiceArea() {
           <div className="mb-5 overflow-hidden rounded-xl border border-line">
           <iframe
             title="Google Map showing Alexandria and Balloch in West Dunbartonshire, Scotland"
-            src="https://maps.google.com/maps?q=Alexandria,+West+Dunbartonshire,+Scotland,+GB&z=13&output=embed"
+            src="https://maps.google.com/maps?ll=55.9880,-4.5800&q=55.9880,-4.5800&z=14&output=embed"
             className="block h-44 w-full border-0 sm:h-56"
             loading="lazy"
             allowFullScreen
