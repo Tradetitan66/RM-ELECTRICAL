@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #111111;
+  --color-orange: #FF8A00;
+  --color-warm: #F7F4EF;
+  --color-white: #FFFFFF;
+  --color-body: #454545;
+  --color-line: #E5E0D8;
+  --color-whatsapp: #25D366;
+
+  --font-heading: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-body);
+    background-color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    line-height: 1.05;
+  }
+
+  ::selection {
+    background-color: var(--color-orange);
+    color: var(--color-ink);
+  }
+}
+
+@utility scroll-margin-offset {
+  scroll-margin-top: 5rem;
+}
+
+@layer components {
+  .modal-sheet {
+    max-height: 92vh;
+  }
+
+  @supports (height: 1dvh) {
+    .modal-sheet {
+      max-height: 92dvh;
+    }
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto max-w-6xl px-5 sm:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-none border-2 font-semibold transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-orange border-orange text-ink hover:bg-transparent hover:text-orange;
+  }
+
+  .btn-dark {
+    @apply bg-ink border-ink text-white hover:bg-transparent hover:text-ink;
+  }
+
+  .btn-outline-dark {
+    @apply border-ink text-ink hover:bg-ink hover:text-white;
+  }
+
+  .btn-outline-light {
+    @apply border-white text-white hover:bg-white hover:text-ink;
+  }
+
+  .btn-outline-orange {
+    @apply border-orange text-orange hover:bg-orange hover:text-ink;
+  }
+}

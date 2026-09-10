@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="RM Electrical">
+  <rect width="64" height="64" rx="4" fill="#111111"/>
+  <text x="50%" y="56%" text-anchor="middle" dominant-baseline="middle"
+        font-family="'Barlow Condensed','Arial Narrow',sans-serif"
+        font-size="26" font-weight="800" letter-spacing="1" fill="#FF8A00">
+    RM
+  </text>
+</svg>
