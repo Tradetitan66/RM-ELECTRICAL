@@ -6,7 +6,7 @@ const STEPS = [
   {
     number: '1',
     title: 'Tell us about the job',
-    copy: 'Choose a service and add your location and project details.',
+    copy: 'Choose an option and add your details.',
   },
   {
     number: '2',
@@ -16,7 +16,7 @@ const STEPS = [
   {
     number: '3',
     title: 'Discuss the next steps',
-    copy: 'Speak to Ryan about the work, availability and quotation.',
+    copy: 'Speak to us about the work, availability and quotation.',
   },
 ]
 

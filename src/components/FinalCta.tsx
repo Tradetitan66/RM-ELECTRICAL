@@ -18,7 +18,7 @@ export default function FinalCta() {
           your <span className="text-orange">electrical job.</span>
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-lg text-white/75">
-          Contact Ryan at {BUSINESS.name} to discuss what you need.
+          Contact us at {BUSINESS.name} to discuss what you need.
         </p>
         <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
           <CallButton href={BUSINESS.phoneHref} size="lg" />

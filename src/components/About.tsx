@@ -8,7 +8,7 @@ export default function About() {
         <div className="relative order-2 lg:order-1">
           <img
             src="/img/about-rm.webp"
-            alt="Electrical work completed by RM Electrical"
+            alt="Electrical work completed by Local Electrical"
             className="h-auto w-full rounded-2xl"
             width={1200}
             height={900}
@@ -16,13 +16,13 @@ export default function About() {
           />
           <div className="absolute -bottom-6 -right-6 hidden border border-line bg-warm px-6 py-5 sm:block rounded-2xl">
             <p className="text-xs font-semibold tracking-[0.2em] text-body/70">BASED IN</p>
-            <p className="mt-1 text-lg font-bold text-ink">Alexandria, Scotland</p>
+            <p className="mt-1 text-lg font-bold text-ink">Edinburgh, Scotland</p>
           </div>
         </div>
 
         <div className="order-1 lg:order-2">
           <p className="text-xs font-semibold tracking-[0.25em] text-orange">
-            ABOUT RM ELECTRICAL
+            ABOUT LOCAL ELECTRICAL
           </p>
           <h2
             id="about-heading"
@@ -33,8 +33,8 @@ export default function About() {
             for <span className="text-orange">electrical work.</span>
           </h2>
           <p className="mt-6 text-lg leading-relaxed">
-            {BUSINESS.name} serves Alexandria, Balloch and surrounding areas. Contact
-            Ryan directly to discuss lighting, sockets, fuse board replacement,
+            {BUSINESS.name} serves Edinburgh and surrounding areas. Contact
+            us directly to discuss lighting, sockets, fuse board replacement,
             testing and external power.
           </p>
           <p className="mt-4 leading-relaxed">

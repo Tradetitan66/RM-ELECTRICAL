@@ -1,14 +1,14 @@
 export const BUSINESS = {
-  name: 'RM Electrical',
-  wordmarkA: 'RM',
+  name: 'Local Electrical',
+  wordmarkA: 'LOCAL',
   wordmarkB: 'ELECTRICAL',
-  contactName: 'Ryan',
-  phoneDisplay: '07972 915912',
-  phoneHref: 'tel:+447972915912',
-  whatsappHref: 'https://wa.me/447972915912?text=',
-  whatsappNumber: '447972915912',
-  area: 'Alexandria, Scotland',
-  coverage: 'Alexandria, Balloch and surrounding areas',
+  contactName: 'our team',
+  phoneDisplay: '07345 384868',
+  phoneHref: 'tel:+447345384868',
+  whatsappHref: 'https://wa.me/447345384868?text=',
+  whatsappNumber: '447345384868',
+  area: 'Edinburgh, United Kingdom',
+  coverage: 'Edinburgh and surrounding areas',
   logo: '/logo-placeholder.svg',
 } as const
 
@@ -27,12 +27,12 @@ export interface ServiceOption {
 }
 
 export const SERVICES: ServiceOption[] = [
-  { key: 'lighting', label: 'Lighting installation', formLabel: 'Lighting installation' },
-  { key: 'sockets', label: 'Sockets & fittings', formLabel: 'Sockets & fittings' },
-  { key: 'fuseBoard', label: 'Fuse board replacement', formLabel: 'Fuse board replacement' },
-  { key: 'testing', label: 'Testing & inspection', formLabel: 'Testing & inspection' },
-  { key: 'external', label: 'External power', formLabel: 'External power' },
-  { key: 'other', label: 'Other electrical enquiry', formLabel: 'Other electrical enquiry' },
+  { key: 'lighting', label: 'A website like this demo', formLabel: 'A website like this demo' },
+  { key: 'sockets', label: 'A new website for my business', formLabel: 'A new website for my business' },
+  { key: 'fuseBoard', label: 'Redesign an existing website', formLabel: 'Redesign an existing website' },
+  { key: 'testing', label: 'Extra pages & features', formLabel: 'Extra pages & features' },
+  { key: 'external', label: 'A website for a different trade', formLabel: 'A website for a different trade' },
+  { key: 'other', label: 'Other website enquiry', formLabel: 'Other website enquiry' },
 ]
 
 export const serviceLabel = (key: ServiceKey): string =>

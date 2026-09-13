@@ -1,7 +1,10 @@
-# RM Electrical — Website
+# Local Electrical — Demo Website
 
-A responsive, single-page marketing website for **RM Electrical**, a local electrician
-serving Alexandria, Balloch and surrounding areas in Scotland.
+A responsive, single-page marketing website used as a **demo template** for
+prospective clients. Includes placeholder branding ("Local Electrical") and dummy
+contact data; the WhatsApp enquiry prefills "I have seen website demo and would
+like to build one like for me." and routes to **07345 384868**, with a map of
+Edinburgh, United Kingdom.
 
 Built with **React + TypeScript + Tailwind CSS + Vite**.
 

@@ -13,11 +13,37 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [bannerVisible, setBannerVisible] = useState(true)
   const { openModal } = useWhatsAppModal()
 
   const closeMenu = () => setMenuOpen(false)
 
   return (
+    <>
+    {bannerVisible && (
+      <div className="bg-orange text-ink">
+        <div className="container-site flex items-center justify-center gap-3 py-2 text-center sm:justify-between sm:text-left">
+          <p className="text-xs font-semibold sm:text-sm">
+            This is a <span className="uppercase tracking-[0.15em]">demo</span> website - like the design? We can build one like this for your business.
+          </p>
+          <button
+            type="button"
+            onClick={() => openModal()}
+            className="hidden shrink-0 bg-ink px-3 py-1.5 text-xs font-bold tracking-wide text-white transition-colors hover:bg-ink/80 sm:inline-flex"
+          >
+            Get yours
+          </button>
+          <button
+            type="button"
+            onClick={() => setBannerVisible(false)}
+            aria-label="Dismiss demo notice"
+            className="shrink-0 p-1 transition-colors hover:text-white"
+          >
+            <X className="h-4 w-4" aria-hidden="true" />
+          </button>
+        </div>
+      </div>
+    )}
     <header className="entrance-down sticky top-0 z-40 border-b border-white/10 bg-ink text-white">
       <div className="container-site flex h-16 items-center justify-between gap-4">
         <Wordmark />
@@ -105,5 +131,6 @@ export default function Header() {
         </nav>
       </div>
     </header>
+    </>
   )
 }

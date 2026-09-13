@@ -55,7 +55,7 @@ const CARDS: Card[] = [
     key: 'other',
     icon: HelpCircle,
     title: 'Other Electrical Enquiries',
-    copy: 'Tell Ryan what you need and check whether RM Electrical can help.',
+    copy: 'Tell us what you need and check whether Local Electrical can help.',
   },
 ]
 

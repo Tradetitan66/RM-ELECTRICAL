@@ -19,7 +19,7 @@ export default function Footer() {
         <div>
           <Wordmark />
           <p className="mt-4 max-w-sm text-sm text-white/65">
-            Electrical services in Alexandria, Balloch and surrounding areas.
+            Electrical services in Edinburgh and surrounding areas.
           </p>
         </div>
 
@@ -53,26 +53,6 @@ export default function Footer() {
               >
                 <Phone className="h-4 w-4 text-orange" aria-hidden="true" />
                 {BUSINESS.phoneDisplay}
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://nextdoor.co.uk/pages/rm-electrical-z3vrev/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-white/80 transition-colors hover:text-orange"
-              >
-                RM Electrical on Nextdoor
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.myjobquote.co.uk/t/rm-electrical-12"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-white/80 transition-colors hover:text-orange"
-              >
-                RM Electrical on MyJobQuote
               </a>
             </li>
           </ul>

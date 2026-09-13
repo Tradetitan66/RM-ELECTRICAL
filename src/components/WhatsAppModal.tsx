@@ -35,7 +35,7 @@ const buildMessage = (values: FormValues): string => {
   const details = values.details.trim()
 
   return [
-    `Hi Ryan, I'd like to enquire about some electrical work with ${BUSINESS.name}.`,
+    'I have seen website demo and would like to build one like for me.',
     '',
     `Name: ${name}`,
     `Service: ${service}`,
@@ -49,7 +49,7 @@ const buildMessage = (values: FormValues): string => {
 const validate = (values: FormValues): Errors => {
   const errors: Errors = {}
   if (!values.name.trim()) errors.name = 'Please enter your name.'
-  if (!values.service) errors.service = 'Please choose a service.'
+  if (!values.service) errors.service = 'Please choose an option.'
   if (!values.location.trim()) errors.location = 'Please enter a town or postcode.'
   if (!values.details.trim()) errors.details = 'Please add a few details about the job.'
   return errors
@@ -203,7 +203,7 @@ export default function WhatsAppModal() {
         <header className="flex items-center justify-between gap-4 border-b border-line bg-warm px-4 py-3.5 sm:px-6 sm:py-4">
           <div>
             <h2 id="whatsapp-modal-title" className="text-xl font-bold text-ink sm:text-2xl">
-              Tell Ryan about your job
+              Tell us about your project
             </h2>
             <p className="mt-0.5 text-xs text-body sm:text-sm">
               Add a few details, then continue to WhatsApp to send your enquiry.
@@ -261,7 +261,7 @@ export default function WhatsAppModal() {
                 htmlFor="contact-service"
                 className="mb-1.5 block text-sm font-semibold text-ink"
               >
-                Service required <span className="text-orange" aria-hidden="true">*</span>
+                What do you need? <span className="text-orange" aria-hidden="true">*</span>
               </label>
               <select
                 id="contact-service"
@@ -275,7 +275,7 @@ export default function WhatsAppModal() {
                 }`}
               >
                 <option value="" disabled>
-                  Select a service
+                  Select an option
                 </option>
                 {SERVICES.map((service) => (
                   <option key={service.key} value={service.formLabel}>
@@ -296,7 +296,7 @@ export default function WhatsAppModal() {
                 htmlFor="contact-location"
                 className="mb-1.5 block text-sm font-semibold text-ink"
               >
-                Town or postcode <span className="text-orange" aria-hidden="true">*</span>
+                Your location <span className="text-orange" aria-hidden="true">*</span>
               </label>
               <input
                 type="text"
@@ -305,7 +305,7 @@ export default function WhatsAppModal() {
                 value={values.location}
                 onChange={handleChange}
                 autoComplete="postal-code"
-                placeholder="e.g. Alexandria, G83"
+                placeholder="e.g. Edinburgh, EH1"
                 aria-invalid={Boolean(errors.location)}
                 aria-describedby={errors.location ? 'contact-location-error' : undefined}
                 className={`w-full rounded-none border bg-white px-4 py-2.5 text-body outline-none transition-colors focus:border-orange focus:ring-2 focus:ring-orange/30 sm:py-3 ${
@@ -325,7 +325,7 @@ export default function WhatsAppModal() {
                 htmlFor="contact-details"
                 className="mb-1.5 block text-sm font-semibold text-ink"
               >
-                Project details <span className="text-orange" aria-hidden="true">*</span>
+                More about your website <span className="text-orange" aria-hidden="true">*</span>
               </label>
               <textarea
                 id="contact-details"
@@ -333,7 +333,7 @@ export default function WhatsAppModal() {
                 value={values.details}
                 onChange={handleChange}
                 rows={4}
-                placeholder="e.g. Two kitchen downlights plus under-cabinet lighting in Alexandria"
+                placeholder="e.g. I run a plumbing business in Edinburgh and want a similar site with services, FAQs and WhatsApp enquiries."
                 aria-invalid={Boolean(errors.details)}
                 aria-describedby={errors.details ? 'contact-details-error' : undefined}
                 className={`w-full resize-y rounded-none border bg-white px-4 py-2.5 text-body outline-none transition-colors focus:border-orange focus:ring-2 focus:ring-orange/30 sm:py-3 ${

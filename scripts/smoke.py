@@ -1,4 +1,4 @@
-"""Quick smoke test for the RM Electrical site.
+"""Quick smoke test for the Local Electrical demo site.
 
 Run with the dev or preview server already serving on a port:
 
@@ -46,7 +46,7 @@ def main() -> int:
         page.goto(args.base, wait_until="networkidle")
         page.wait_for_timeout(600)
 
-        check("Title tag", "RM Electrical | Electrician in Alexandria & Balloch" == page.title())
+        check("Title tag", "Local Electrical | Electrician in Edinburgh & UK" == page.title())
         check("Hero headline", page.locator("#hero-heading").is_visible())
         check(
             "No horizontal overflow (desktop)",
@@ -59,7 +59,7 @@ def main() -> int:
         check("Modal opens", page.get_by_role("dialog").is_visible())
         check(
             "Lighting preselected",
-            page.locator("#contact-service").input_value() == "Lighting installation",
+            page.locator("#contact-service").input_value() == "A website like this demo",
         )
 
         # Attempt submit empty -> errors + focus.
@@ -73,18 +73,18 @@ def main() -> int:
 
         # Fill and inspect the exact href (do NOT open WhatsApp).
         page.fill("#contact-name", "Smoke Test")
-        page.select_option("#contact-service", label="Lighting installation")
-        page.fill("#contact-location", "Alexandria, G83")
+        page.select_option("#contact-service", label="A website like this demo")
+        page.fill("#contact-location", "Edinburgh, EH1")
         page.fill("#contact-details", "Two downlights & under-cabinet lighting")
         spread_with_and = page.get_by_role("link", name="Continue to WhatsApp").get_attribute("href")
         parsed = urllib.parse.urlparse(spread_with_and)
-        check("Digits-only wa.me destination", parsed.netloc == "wa.me" and parsed.path == "/447972915912")
+        check("Digits-only wa.me destination", parsed.netloc == "wa.me" and parsed.path == "/447345384868")
         check("Message is URL-encoded", "%0A" in spread_with_and and "%26" in spread_with_and, spread_with_and[:160])
         decoded = urllib.parse.unquote(urllib.parse.parse_qs(parsed.query).get("text", [""])[0])
         check(
             "Message follows spec structure",
             decoded.startswith(
-                "Hi Ryan, I'd like to enquire about some electrical work with RM Electrical.\n\nName: Smoke Test\n"
+                "I have seen website demo and would like to build one like for me.\n\nName: Smoke Test\n"
             ),
             decoded[:90],
         )
@@ -112,7 +112,7 @@ def main() -> int:
             not page.evaluate("document.documentElement.scrollWidth > document.documentElement.clientWidth"),
         )
         check("Mobile action bar visible", page.get_by_role("button", name="WhatsApp Quote").last.is_visible())
-        check("Mobile Call link is tel:", page.locator('a[href="tel:+447972915912"]').last.is_visible())
+        check("Mobile Call link is tel:", page.locator('a[href="tel:+447345384868"]').last.is_visible())
 
         check("No console errors", len(console_errors) == 0, "; ".join(console_errors[:3]))
 

@@ -24,9 +24,9 @@ export default function ServiceArea() {
             id="contact-heading"
             className="mt-4 text-4xl font-extrabold sm:text-5xl"
           >
-            Local to Alexandria.
+            Local to Edinburgh.
             <br />
-            Covering Balloch and <span className="text-orange">nearby.</span>
+            Covering surrounding <span className="text-orange">areas.</span>
           </h2>
           <p className="mt-6 max-w-xl leading-relaxed">
             Get in touch to discuss your electrical job and confirm availability
@@ -48,8 +48,8 @@ export default function ServiceArea() {
         <div className="rounded-2xl border border-line bg-warm p-6 sm:p-8">
           <div className="mb-5 overflow-hidden rounded-xl border border-line">
           <iframe
-            title="Google Map showing Alexandria and Balloch in West Dunbartonshire, Scotland"
-            src="https://maps.google.com/maps?ll=55.9880,-4.5800&q=55.9880,-4.5800&z=14&output=embed"
+            title="Google Map showing Edinburgh, United Kingdom"
+            src="https://maps.google.com/maps?ll=55.9533,-3.1883&q=55.9533,-3.1883&z=13&output=embed"
             className="block h-44 w-full border-0 sm:h-56"
             loading="lazy"
             allowFullScreen

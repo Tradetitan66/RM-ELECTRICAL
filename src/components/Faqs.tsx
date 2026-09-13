@@ -10,7 +10,7 @@ const FAQS: Faq[] = [
   {
     question: 'What electrical services do you offer?',
     answer:
-      'RM Electrical advertises lighting, sockets, fuse board replacement, testing and inspection, and external power. Contact Ryan to discuss your specific job.',
+      'Local Electrical advertises lighting, sockets, fuse board replacement, testing and inspection, and external power. Contact us to discuss your specific job.',
   },
   {
     question: 'Can you help with kitchen lighting?',
@@ -20,12 +20,12 @@ const FAQS: Faq[] = [
   {
     question: 'Which areas do you cover?',
     answer:
-      'Alexandria, Balloch and surrounding areas. Contact Ryan to confirm availability at your address.',
+      'Edinburgh and surrounding areas. Contact us to confirm availability at your address.',
   },
   {
     question: 'How do I request a quote?',
     answer:
-      "Call 07972 915912 or choose 'Get a Quote on WhatsApp'. Complete the short form, then send the prepared message in WhatsApp.",
+      "Call 07345 384868 or choose 'Get a Quote on WhatsApp'. Complete the short form, then send the prepared message in WhatsApp.",
   },
   {
     question: 'Does the popup send my enquiry automatically?',

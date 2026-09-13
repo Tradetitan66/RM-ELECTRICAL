@@ -6,19 +6,19 @@ import WhatsAppGlyph from './WhatsAppGlyph'
 const SLIDES = [
   {
     src: '/img/lighting-project.webp',
-    alt: 'Lighting work completed by RM Electrical',
+    alt: 'Lighting work completed by Local Electrical',
     width: 1200,
     height: 1037,
   },
   {
     src: '/img/lighting-project-2.webp',
-    alt: 'Kitchen lighting installed by RM Electrical',
+    alt: 'Kitchen lighting installed by Local Electrical',
     width: 1200,
     height: 900,
   },
   {
     src: '/img/lighting-project-1.webp',
-    alt: 'Lighting work completed by RM Electrical',
+    alt: 'Lighting work completed by Local Electrical',
     width: 1200,
     height: 895,
   },
@@ -133,7 +133,7 @@ export default function LightingFeature() {
           </h2>
           <p className="mt-6 max-w-lg leading-relaxed text-white/80">
             Planning wall lights, kitchen downlights or under-cabinet lighting?
-            Tell Ryan about your room and the result you have in mind.
+            Tell us about your room and the result you have in mind.
           </p>
           <button
             type="button"

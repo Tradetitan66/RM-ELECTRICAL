@@ -3,9 +3,9 @@ import { BUSINESS } from '../config/business'
 import { CallButton, WhatsAppButton } from './CTAButtons'
 
 const HERO_POINTS = [
-  'Based in Alexandria',
+  'Based in Edinburgh',
   'Lighting, sockets & power',
-  'Speak directly to Ryan',
+  'Speak directly to us',
 ]
 
 export default function Hero() {
@@ -17,7 +17,7 @@ export default function Hero() {
             className="entrance-up mb-5 inline-flex w-fit items-center border border-white/20 px-3 py-1 text-xs font-semibold tracking-[0.18em] text-white/75"
             style={{ animationDelay: '80ms' }}
           >
-            ALEXANDRIA &bull; BALLOCH &bull; SURROUNDING AREAS
+            EDINBURGH &bull; UNITED KINGDOM
           </p>
 
           <h1
@@ -35,7 +35,7 @@ export default function Hero() {
             style={{ animationDelay: '320ms' }}
           >
             From lighting and sockets to fuse board replacement and testing,
-            speak to Ryan at {BUSINESS.name} about your next electrical job.
+            speak to us at {BUSINESS.name} about your next electrical job.
           </p>
 
           <div
