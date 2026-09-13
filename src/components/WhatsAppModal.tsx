@@ -194,13 +194,17 @@ export default function WhatsAppModal() {
       <div
         ref={dialogRef}
         tabIndex={-1}
-        className={`relative z-10 flex modal-sheet w-full flex-col overflow-hidden border-t border-white/20 bg-white shadow-2xl transition-[transform,opacity] duration-300 motion-reduce:transition-none sm:max-w-lg sm:border sm:border-line ${
+        className={`relative z-10 flex modal-sheet w-full flex-col overflow-hidden rounded-t-2xl border-t border-white/20 bg-white shadow-2xl transition-[transform,opacity] duration-300 motion-reduce:transition-none sm:max-w-lg sm:rounded-none sm:border sm:border-line ${
           isOpen
             ? 'translate-y-0 opacity-100'
             : 'pointer-events-none translate-y-full opacity-0 sm:translate-y-8 sm:scale-95'
         }`}
       >
-        <header className="flex items-center justify-between gap-4 border-b border-line bg-warm px-4 py-3.5 sm:px-6 sm:py-4">
+        <span
+          className="mx-auto mt-3 mb-1 block h-1.5 w-10 shrink-0 rounded-full bg-ink/15 sm:hidden"
+          aria-hidden="true"
+        />
+        <header className="flex items-center justify-between gap-4 border-b border-line bg-warm px-4 py-3 sm:px-6 sm:py-4">
           <div>
             <h2 id="whatsapp-modal-title" className="text-xl font-bold text-ink sm:text-2xl">
               Tell us about your project
@@ -226,6 +230,10 @@ export default function WhatsAppModal() {
           noValidate
         >
           <div className="space-y-4 sm:space-y-5">
+            <p className="border border-orange/30 bg-orange/10 px-4 py-3 text-sm leading-relaxed text-ink">
+              This form is to enquire about building a website like this one. We can also
+              build a similar enquiry form like this for your own business.
+            </p>
             <div>
               <label
                 htmlFor="contact-name"
@@ -350,7 +358,10 @@ export default function WhatsAppModal() {
           </div>
         </form>
 
-        <footer className="border-t border-line bg-warm px-4 py-4 sm:px-6 sm:py-5">
+        <footer
+          className="border-t border-line bg-warm px-4 pt-4 sm:px-6 sm:py-5"
+          style={{ paddingBottom: 'max(1rem, env(safe-area-inset-bottom))' }}
+        >
           <div className="flex flex-col gap-3">
             <a
               href={messageUrl}

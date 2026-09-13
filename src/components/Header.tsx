@@ -22,25 +22,27 @@ export default function Header() {
     <>
     {bannerVisible && (
       <div className="bg-orange text-ink">
-        <div className="container-site flex items-center justify-center gap-3 py-2 text-center sm:justify-between sm:text-left">
-          <p className="text-xs font-semibold sm:text-sm">
+        <div className="container-site flex items-center gap-3 py-2">
+          <p className="flex-1 text-xs font-semibold leading-snug sm:text-sm">
             This is a <span className="uppercase tracking-[0.15em]">demo</span> website - like the design? We can build one like this for your business.
           </p>
-          <button
-            type="button"
-            onClick={() => openModal()}
-            className="hidden shrink-0 bg-ink px-3 py-1.5 text-xs font-bold tracking-wide text-white transition-colors hover:bg-ink/80 sm:inline-flex"
-          >
-            Get yours
-          </button>
-          <button
-            type="button"
-            onClick={() => setBannerVisible(false)}
-            aria-label="Dismiss demo notice"
-            className="shrink-0 p-1 transition-colors hover:text-white"
-          >
-            <X className="h-4 w-4" aria-hidden="true" />
-          </button>
+          <div className="flex shrink-0 items-center gap-2">
+            <button
+              type="button"
+              onClick={() => openModal()}
+              className="inline-flex min-h-8 items-center bg-ink px-2.5 text-[11px] font-bold tracking-wide text-white transition-colors hover:bg-ink/80 sm:px-3 sm:text-xs"
+            >
+              Get yours
+            </button>
+            <button
+              type="button"
+              onClick={() => setBannerVisible(false)}
+              aria-label="Dismiss demo notice"
+              className="grid h-8 w-8 shrink-0 place-items-center transition-colors hover:text-white"
+            >
+              <X className="h-4 w-4" aria-hidden="true" />
+            </button>
+          </div>
         </div>
       </div>
     )}
